@@ -1,0 +1,734 @@
+
+<!-- saved from url=(0056)https://www.cs.cmu.edu/~rapidproto/mechanisms/chpt6.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Chapter 6. Cams</title></head>
+<body bgcolor="ffffff" vlink="0000ad">
+<table><tbody><tr><td>
+<table>
+<tbody><tr><td width="30"></td>
+<td width="100">
+<a href="https://www.cs.cmu.edu/~rapidproto/mechanisms/chpt6.html#bottom"><img align="Left" src="./Chapter 6. Cams_files/downarrow.gif" width="95" height="95" alt="Arrow to Bottom"></a></td>
+<td width="500">
+<h2><center>
+<a href="https://www.cs.cmu.edu/~rapidproto/home.html">39-245</a><br><br>
+Rapid Design through Virtual and Physical Prototyping 
+</center></h2>
+<center><h3><a href="http://www.cmu.edu/">Carnegie Mellon
+University</a></h3>
+</center>
+</td>
+<td width="100">
+<a href="https://www.cs.cmu.edu/~rapidproto/mechanisms/index.html#mechindex">
+<img align="right" src="./Chapter 6. Cams_files/book.gif" width="95" height="95" alt="Course Index"></a></td></tr>
+<tr><td width="30"></td><td colspan="3">
+<center>
+<img src="./Chapter 6. Cams_files/darkbluebar.gif" width="800" height="5" alt="HR">
+</center>
+</td></tr>
+</tbody></table>
+
+<table>
+<tbody><tr><td width="30"></td><td width="800">
+
+<h1><center>Introduction to Mechanisms </center></h1>
+
+<p></p><center>
+Yi Zhang<br>
+with <br>
+<a href="http://www.cs.cmu.edu/~sfinger/home.html">Susan Finger</a><br>
+Stephannie Behrens
+</center>
+
+<h3><a href="https://www.cs.cmu.edu/~rapidproto/mechanisms/chpt6.html#toc">Table of Contents </a></h3><p>
+
+</p><h1>6 <a name="HDR81">Cams</a></h1>
+
+<h3>6.1  <a name="HDR82">Introduction</a></h3>
+
+<h4>6.1.1 <a name="HDR83">A Simple Experiment: What is a Cam?</a></h4><p>
+
+</p><center>
+<name=bookandpencil>
+<img src="./Chapter 6. Cams_files/bookandpencil.gif">
+<h4>Figure 6-1 Simple Cam experiment</h4></name=bookandpencil></center><p>
+
+Take a pencil and a book to do an experiment as shown above.  Make the
+book an inclined plane and use the pencil as a slider (use your hand
+as a guide).  When you move the book smoothly upward, what happens to
+the pencil? It will be pushed up along the guide.  By this method, you
+have transformed one motion into another motion by a very simple
+device.  This is the basic idea of a cam.  By rotating the cams in the
+figure below, the bars will have either translational or oscillatory
+motion.  
+
+</p><h4>6.1.2 <a name="HDR85">Cam Mechanisms</a> </h4><p>
+
+The transformation of one of the simple motions, such as rotation,
+into any other motions is often conveniently accomplished by means of
+a <b>cam mechanism</b> A cam mechanism usually consists of two moving
+elements, the cam and the follower, mounted on a fixed frame. Cam
+devices are versatile, and almost any arbitrarily-specified motion can
+be obtained. In some instances, they offer the simplest and most
+compact way to transform motions.  </p><p>
+
+A <i><b>cam</b></i>  may be defined as a machine element having a curved
+outline or a curved groove, which, by its oscillation or rotation
+motion, gives a predetermined specified motion to another element
+called the <i><b>follower</b></i> . The cam has a very important function
+in
+the operation of many classes of machines, especially those of the
+automatic type, such as printing presses, shoe machinery, textile
+machinery, gear-cutting machines, and screw machines. In any class of
+machinery  in which automatic control and accurate timing are
+paramount, the cam is an indispensable part of mechanism. The possible
+applications of cams are unlimited, and their shapes occur in great
+variety. Some of the most common forms will be considered in this
+chapter.<br>
+
+</p><h3>6.2 <a name="HDR86">Classification of Cam Mechanisms</a> </h3><p>
+
+We can classify cam mechanisms by the modes of input/output motion,
+the configuration and arrangement of the follower, and the shape of
+the cam. We can also classify cams by the different types of motion
+events of the follower and by means of a great variety of the motion
+characteristics of the cam profile.  <a href="https://www.cs.cmu.edu/~rapidproto/mechanisms/references.html#chen-82">(Chen 82)</a> </p><p>
+
+<a name="HDR87">
+</a></p><center><a name="HDR87">
+<img src="./Chapter 6. Cams_files/camclassification.gif"></a>
+<h4>Figure 6-2 Classification of cam mechanisms</h4></center>
+
+<h4>4.2.1 <a name="HDR88">Modes of Input/Output Motion</a></h4>
+
+<ol><li>Rotating cam-translating follower. 
+(<a href="https://www.cs.cmu.edu/~rapidproto/mechanisms/chpt6.html#HDR87">Figure 6-2a,b,c,d,e</a>)
+
+</li><li>Rotating follower (<a href="https://www.cs.cmu.edu/~rapidproto/mechanisms/chpt6.html#HDR87">Figure 6-2f</a>): <br>
+The follower arm swings or oscillates in a circular arc with respect
+to the follower pivot.
+
+</li><li>Translating cam-translating follower (<a href="https://www.cs.cmu.edu/~rapidproto/mechanisms/chpt6.html#HDR91">Figure 6-3</a>).
+
+</li><li>Stationary cam-rotating follower: <br>
+The follower system revolves with respect to the center line of the
+vertical shaft.
+</li></ol><p>
+
+</p><center>
+<a name="HDR91">
+<img src="./Chapter 6. Cams_files/camtrans.gif"></a>
+<h4>Figure 6-3 Translating cam - translating follower</h4></center>
+
+<h4>6.2.1 <a name="HDR89">Follower Configuration</a></h4>
+
+<ol>
+<li><b>Knife-edge follower</b> (<a href="https://www.cs.cmu.edu/~rapidproto/mechanisms/chpt6.html#HDR87">Figure 6-2a</a>)
+
+</li><li><b>Roller follower</b> (<a href="https://www.cs.cmu.edu/~rapidproto/mechanisms/chpt6.html#HDR87">Figure 6-2b,e,f</a>)
+
+</li><li><b>Flat-faced follower</b> (<a href="https://www.cs.cmu.edu/~rapidproto/mechanisms/chpt6.html#HDR87">Figure 6-2c</a>)
+
+</li><li><b>Oblique flat-faced follower</b>
+
+</li><li><b>Spherical-faced follower</b> (<a href="https://www.cs.cmu.edu/~rapidproto/mechanisms/chpt6.html#HDR87">Figure 6-2d</a>)
+</li></ol>
+
+<h4>6.2.2  <a name="HDR90">Follower Arrangement</a></h4>
+
+<ol>
+<li>In-line follower:<br>
+The center line of the follower passes through the center line of the
+camshaft.
+
+</li><li>Offset follower:<br>
+The center line of the follower does not pass through the center line
+of the cam shaft.  The amount of <b>offset</b> is the distance between
+these two center lines.  The offset causes a reduction of the side
+thrust present in the roller follower.
+</li></ol>
+
+<h4>6.2.3 <a name="HDR92">Cam Shape</a></h4>
+
+<ol>
+<li>Plate cam or <b>disk cam</b>:<br>
+The follower moves in a plane perpendicular to the axis of rotation of
+the camshaft.  A translating or a swing arm follower must be
+constrained to maintain contact with the cam profile.
+
+</li><li><b>Grooved cam</b> or closed cam (<a href="https://www.cs.cmu.edu/~rapidproto/mechanisms/chpt6.html#HDR93">Figure 6-4</a>):<br>
+This is a plate cam with the follower riding in a groove in the face
+of the cam.
+
+<center>
+<a name="HDR93">
+<img src="./Chapter 6. Cams_files/camgroove.gif"></a>
+<h4>Figure 6-4 Grooved cam</h4></center><br>
+
+</li><li><b>Cylindrical cam</b> or barrel cam (<a href="https://www.cs.cmu.edu/~rapidproto/mechanisms/chpt6.html#HDR94">Figure
+6-5a</a>):<br>
+The roller follower operates in a groove cut on the periphery of a
+cylinder.  The follower may translate or oscillate.  If the cylindrical
+surface is replaced by a conical one, a conical cam results.
+
+</li><li><b>End cam</b> (<a href="https://www.cs.cmu.edu/~rapidproto/mechanisms/chpt6.html#HDR94">Figure 6-5b)</a>: <br>
+This cam has a rotating portion of a cylinder. The follower translates
+or oscillates, whereas the cam usually rotates. The end cam is rarely
+used because of the cost and the difficulty in cutting its contour.
+</li></ol><p>
+
+</p><center>
+<a name="HDR94">
+<img src="./Chapter 6. Cams_files/camcylend.gif"></a>
+<h4>Figure 6-5  Cylindrical cam and end cam</h4></center>
+
+<h4>6.2.4 <a name="HDR95">Constraints on the Follower</a></h4>
+
+<ol>
+<li>Gravity constraint:<br>
+The weight of the follower system is sufficient to maintain contact.
+
+</li><li>Spring constraint:<br>
+The spring must be properly designed to maintain contact.
+
+</li><li>Positive mechanical constraint:<br>
+A groove maintains positive action. 
+(<a href="https://www.cs.cmu.edu/~rapidproto/mechanisms/chpt6.html#HDR93">Figure 6-4</a> and <a href="https://www.cs.cmu.edu/~rapidproto/mechanisms/chpt6.html#HDR94">Figure 6-5a</a>)
+For the cam in Figure 6-6, the follower has two rollers, separated by a fixed
+distance, which act as the constraint; the mating cam in 
+such an arrangement is often called a <i>constant-diameter cam</i>. 
+
+<center>
+<a name="constantdi">
+<img src="./Chapter 6. Cams_files/camconstant.gif"></a>
+<h4>Figure 6-6 Constant diameter cam </h4></center><br>
+
+A mechanical constraint cam also be introduced by employing a dual or
+conjugate cam in arrangement similar to what shown in Figure 6-7.
+Each cam has its own roller, but the rollers are mounted on the same
+reciprocating or oscillating follower.
+
+<center>
+<a name="camdual">
+<img src="./Chapter 6. Cams_files/camdual.gif"></a>
+<h4>Figure 6-7 Dual cam </h4></center>
+</li></ol>
+
+<h4>6.2.5 <a name="HDR95">Examples in SimDesign</a> </h4><p>
+
+<b>Rotating Cam, Translating Follower</b>
+
+</p><center>
+<a name="camtrans">
+<img src="./Chapter 6. Cams_files/cam.translating.gif" width="137" height="215"></a>
+<h4>Figure 6-8 SimDesign translating cam </h4></center><p>
+
+Load the SimDesign file <tt>simdesign/cam.translating.sim</tt>. If you
+turn the cam, the follower will move.  The weight of the follower
+keeps them in contact.  This is called a <i>gravity constraint</i> cam.
+</p><p>
+
+<b>Rotating Cam/Rotating Follower</b>
+
+</p><center>
+<a name="camosc">
+<img src="./Chapter 6. Cams_files/cam.oscillating.gif" align="center" width="267" height="140">
+<h4>Figure 6-9 SimDesign oscillating cam </h4></a></center><p><a name="camosc">
+
+The SimDesign file is <tt>simdesign/cam.oscillating.sim</tt>.  Notice
+that a roller is used at the end of the follower.  In addition, a
+spring is used to maintain the contact of the cam and the roller.  </a></p><p><a name="camosc">
+
+If you try to calculate the </a><a href="https://www.cs.cmu.edu/~rapidproto/mechanisms/chpt4.html#HDR54">degrees of
+freedom (DOF)</a> of the mechanism, you must imagine that the roller
+is welded onto the follower because turning the roller does not
+influence the motion of the follower.
+
+</p><h3>6.3 <a name="HDR96">Cam Nomenclature</a> </h3><p>
+
+<a href="https://www.cs.cmu.edu/~rapidproto/mechanisms/chpt6.html#HDR97">Figure 6-10</a> illustrates some cam nomenclature:
+</p><p>
+
+<a name="HDR97">
+</a></p><center><a name="HDR97">
+<img src="./Chapter 6. Cams_files/camnomen.gif"></a>
+<h4>Figure 6-10 Cam nomenclature</h4></center><br>
+
+<ul>
+<li><b>Trace point</b>: 
+A theoretical point on the follower, corresponding to the point of a
+fictitious <i>knife-edge follower</i>.  It is used to generate the
+<i>pitch curve</i>.  In the case of a <i>roller follower</i>, the trace
+point is at the center of the roller.
+
+</li><li><b>Pitch curve</b>: The path generated by the trace point at
+the follower is rotated about a stationary cam.
+
+
+</li><li><a name="HDR97A"><b>Working curve</b></a>: The working surface of
+a cam in contact with the follower.  For the <i>knife-edge follower</i>
+of the plate cam, the <i>pitch curve</i> and the <i>working curves</i>
+coincide. In a <i>close or grooved cam</i> there is an <i>inner
+profile</i> and an <i>outer working curve</i>.
+
+</li><li><b>Pitch circle</b>: A circle from the cam center through the pitch
+point. The pitch circle radius is used to calculate a cam of minimum size
+for a given <i>pressure angle</i>.
+
+</li><li><b>Prime circle</b> (<b>reference circle</b>): The smallest circle
+from the cam center through the pitch curve.
+
+</li><li><b>Base circle</b>: The smallest circle from the cam center through
+the cam profile curve.
+
+</li><li><b>Stroke</b> or <b>throw</b>:The greatest distance or angle through
+which
+the follower moves or rotates.
+
+</li><li><b>Follower displacement</b>: The position of the follower from a
+specific zero or rest position (usually its the position when the <i>f
+</i>ollower contacts with the <i>base circle</i>  of the cam) in relation
+to time or the rotary angle of the cam.
+
+</li><li><b>Pressure angle</b>: The angle at any point between the normal to
+the pitch curve and the instantaneous direction of the follower motion. This
+angle is important in cam design because it represents the steepness of the
+cam profile.
+</li></ul>
+
+<h3>6.4 <a name="HDR98">Motion events</a> </h3><p>
+
+When the cam turns through one motion cycle, the follower executes a
+series of events consisting of rises, dwells and returns. <b>Rise</b>
+is the motion of the follower away from the cam center, <b>dwell</b>
+is the motion during which the follower is at rest; and <b>return</b>
+is the motion of the follower toward the cam center.  </p><p>
+
+There are many follower motions that can be used for the rises and the
+returns.  In this chapter, we describe a number of basic curves.  </p><p>
+
+</p><center>
+<a name="HDR99">
+<img src="./Chapter 6. Cams_files/cammotion.gif"></a>
+<h4>Figure 6-11 Motion events</h4></center>
+
+<b>Notation</b><p>
+
+</p><dl>
+<dd> <img src="./Chapter 6. Cams_files/phi12.gif">: The rotary angle of
+the cam, measured from the beginning of the motion event;
+
+</dd><dd><img src="./Chapter 6. Cams_files/beta12.gif">: The range of the
+rotary angle corresponding to the motion event;
+
+</dd><dd>h : The stoke of the motion event of the follower;
+
+</dd><dd>S : Displacement of the follower;
+
+</dd><dd>V : Velocity of the follower;
+
+</dd><dd>A : Acceleration of the follower.
+</dd></dl>
+
+<h4>6.4.1 <a name="HDR100">Constant Velocity Motion</a> </h4><p>
+
+If the motion of the follower were a straight line, <a href="https://www.cs.cmu.edu/~rapidproto/mechanisms/chpt6.html#HDR99">Figure 6-11a,b,c</a>, it would have equal displacements
+in equal units of time, <i>i.e.</i>, uniform velocity from the
+beginning to the end of the stroke, as shown in b.  The acceleration,
+except at the end of the stroke would be zero, as shown in c.  The
+diagrams show abrupt changes of velocity, which result in large forces
+at the beginning and the end of the stroke.  These forces are
+undesirable, especially when the cam rotates at high velocity. The
+<i>constant velocity motion</i> is therefore only of theoretical
+interest.  </p><p>
+
+</p><center>
+<img src="./Chapter 6. Cams_files/eq6.1.constantv.gif">
+</center>
+<p align="Right">(6-1)</p><p>
+
+</p><h4>6.4.2 <a name="HDR101">Constant Acceleration Motion</a> </h4><p>
+
+<i>Constant acceleration motion</i> is shown in <a href="https://www.cs.cmu.edu/~rapidproto/mechanisms/chpt6.html#HDR99">Figure 6-11d, e, f</a>.  As indicated in e, the velocity
+increases at a uniform rate during the first half of the motion and
+decreases at a uniform rate during the second half of the motion.  The
+acceleration is constant and positive throughout the first half of the
+motion, as shown in f, and is constant and negative throughout the
+second half.  This type of motion gives the follower the smallest
+value of maximum acceleration along the path of motion.  In high-speed
+machinery this is particularly important because of the forces that
+are required to produce the accelerations.  </p><p>
+
+When<br>
+<img src="./Chapter 6. Cams_files/eq6.2.cond.gif" ,="" align="center">,<br>
+</p><center>
+<img src="./Chapter 6. Cams_files/eq6.2b.cond.gif">
+<p align="Right">(6-2)
+</p></center>
+<p></p>
+
+
+When <br>
+<img src="./Chapter 6. Cams_files/eq6.4.constanta.gif" ,="" align="center">,<br>
+<center>
+<img src="./Chapter 6. Cams_files/eq6.2b.constanta.gif">
+<p align="Right">(6-3)</p><p>
+</p></center>
+<p>
+
+</p><h4>6.4.3 <a name="HDR102">Harmonic Motion</a> </h4><p>
+
+A cam mechanism with the basic curve like g in <a href="https://www.cs.cmu.edu/~rapidproto/mechanisms/chpt6.html#HDR99">Figure
+6-7g</a> will impart <i>simple harmonic motion</i> to the
+follower. The velocity diagram at h indicates smooth action. The
+acceleration, as shown at i, is maximum at the initial position, zero
+at the mid-position, and negative maximum at the final position.  </p><p>
+
+</p><center>
+<img src="./Chapter 6. Cams_files/eq6.3.harmonic.gif" align="center">
+<p align="Right">(6-4)</p><p>
+</p></center>
+<p>
+
+</p><h3>6.5 <a name="camdesign">Cam Design</a></h3><p>
+
+The translational or rotational displacement of the follower is a function
+of the rotary angle of the cam.  A designer can define the function
+according to the specific requirements in the design.  The motion
+requirements, listed below, are commonly used in cam profile design.
+</p><p>
+
+</p><h4>6.5.1 <a name="HDR6.5.1">Disk Cam with Knife-Edge Translating Follower</a>
+</h4><p>
+
+Figure 6-12 is a skeleton diagram of a disk cam with a knife-edge
+translating follower.  We assume that the cam mechanism will be used
+to realize the displacement relationship between the rotation of the
+<a href="https://www.cs.cmu.edu/~rapidproto/mechanisms/chpt6.html#HDR85">cam</a> and the translation of the <a href="https://www.cs.cmu.edu/~rapidproto/mechanisms/chpt6.html#HDR85">follower</a>.  
+
+</p><center>
+<a name="camknife">
+<img src="./Chapter 6. Cams_files/camknife.pic"></a>
+<h4>Figure 6-12 A Skeleton Diagram of disk cam with knife-edge translation</h4></center><p>
+
+Below is a list of the essential parameters for the evaluation of these
+types of cam mechanisms.  However, these parameters are adequate only
+to define a <a href="https://www.cs.cmu.edu/~rapidproto/mechanisms/chpt6.html#HDR89">knife-edge follower</a> and a <a href="https://www.cs.cmu.edu/~rapidproto/mechanisms/chpt6.html#HDR88">translating follower</a> cam mechanism.
+
+</p><h4>Parameters:</h4><p>
+
+</p><dl>
+<dd><i>r<sub>o</sub></i>: The radius of the <a href="https://www.cs.cmu.edu/~rapidproto/mechanisms/chpt6.html#HDR97A">base
+circle</a>;
+
+</dd><dd><i>e</i>:  The <a href="https://www.cs.cmu.edu/~rapidproto/mechanisms/chpt6.html#HDR90">offset</a> of the follower from the rotary
+center of the cam. Notice: it could be negative.
+
+</dd><dd><i>s</i>: The displacement of the follower which is a function of
+the rotary angle of the cam -- <img src="./Chapter 6. Cams_files/phi12.gif">.  
+
+</dd><dd><i>IW</i>: A parameter whose absolute value is 1. It represents
+the turning direction of the cam.  When the cam turns clockwise:
+<i>IW=+1</i>, otherwise: <i>IW=-1</i>.
+</dd></dl><p>
+
+
+</p><h4><a name="INVERSION">Cam profile design principle:</a>
+</h4><p>
+
+The method termed <a href="https://www.cs.cmu.edu/~rapidproto/mechanisms/chpt5.html#HDR77">inversion</a> is
+commonly used in cam profile design.  For example, in a disk cam with
+<a href="https://www.cs.cmu.edu/~rapidproto/mechanisms/HDR88">translating follower</a> mechanism, the follower
+translates when the cam turns.  This means that the relative motion
+between them is a combination of a relative turning motion and a
+relative translating motion.  Without changing this feature of their
+relative motion, imagine that the cam remains fixed. Now the
+follower performs both the relative turning and translating
+motions.  We have inverted the mechanism.  </p><p>
+
+Furthermore, imagine that the <a href="https://www.cs.cmu.edu/~rapidproto/mechanisms/HDR89">knife-edge</a> of the
+follower moves along the fixed cam profile in the inverted mechanism.
+In other words, the <a href="https://www.cs.cmu.edu/~rapidproto/mechanisms/chpt6.html#HDR89">knife edge</a> of the follower
+draws the profile of the cam. Thus, the problem of designing the cam
+profile becomes a problem of calculating the trace of the knife edge
+of the follower whose motion is the combination of the relative
+turning and the relative translating.  </p><p>
+
+</p><h4>Design equations: </h4><p>
+
+</p><center>
+<a name="camknife2">
+<img src="./Chapter 6. Cams_files/camknife.pic2.gif"></a>
+<h4>Figure 6-13 Profile design of translating cam follower</h4></center><p>
+
+In Figure 6-13, only part of the cam profile <i>AK</i> is
+displayed.  Assume the cam turns clockwise.  At the beginning of
+motion, the knife edge of the follower contacts the point of
+intersection <i>A</i> of the <a href="https://www.cs.cmu.edu/~rapidproto/mechanisms/chpt6.html#HDR97A">base circle</a> and the
+cam profile.  The coordinates of <i>A</i> are (<i>So, e</i>), and
+<i>So</i> can be calculated from equation <img src="./Chapter 6. Cams_files/eq6.4.gif" align="MIDDLE"> </p><p>
+
+Suppose the displacement of the follower is <i>S</i> when the angular
+displacement of the cam is <img src="./Chapter 6. Cams_files/phi12.gif">.  At this moment, the 
+coordinates of the knife edge of the follower should be (<i>So + S,
+e</i>).  </p><p>
+
+To get the corresponding position of the knife edge of the follower in
+the inverted mechanism, turn the follower around the center of the cam
+in the reverse direction through an angle of <img src="./Chapter 6. Cams_files/phi12.gif">.  The knife edge will be
+inverted to point <i>K</i>, which corresponds to the point on
+the cam profile in the inverted mechanism.  Therefore, the coordinates
+of point <i>K</i> can be calculated with the following equation: </p><p>
+
+</p><center>
+<img src="./Chapter 6. Cams_files/eq6.5.gif">
+<p align="Right">(6-5)
+</p><p>
+</p></center>
+
+Note:
+<ul>
+<li>The <a href="https://www.cs.cmu.edu/~rapidproto/mechanisms/chpt6.html#HDR90">offset</a> <i>e</i> is negative if the follower
+is located below the <i>x</i> axis.
+
+</li><li>When the rotational direction of the cam is clockwise: <i>IW = +1</i>,
+otherwise: <i>IW = -1</i>.
+</li></ul>
+
+<h4>6.5.2 <a name="HDR6.5.2">Disk Cam with Oscillating Knife-Edge 
+Follower</a></h4><p>
+
+Suppose the cam mechanism will be used to make the knife edge oscillate.
+We need to compute the coordinates of the cam profile that results in
+the required motion of the follower.
+
+</p><center>
+<a name="camoscillate">
+<img src="./Chapter 6. Cams_files/whatever.gif"></a>
+<h4>Figure 6-14 Disk cam with knife-edge oscillating follower</h4>
+</center>
+<p>
+
+The essential parameters in this kind of cam mechanisms
+are given below. 
+
+</p><dl>
+<dd><i>r<sub>o</sub></i>: The radius of  the <a href="https://www.cs.cmu.edu/~rapidproto/mechanisms/chpt6.html#HDR97A">base
+circle</a>;
+
+</dd><dd><i>a</i>:  The distance between the pivot of the cam and the pivot of
+the follower.
+
+</dd><dd><i>l</i>:  The length of the follower which is a distance from its pivot
+to its knife edge.
+
+</dd><dd><img src="./Chapter 6. Cams_files/psi12.gif">: The angular
+displacement of the follower which is a function of the rotary angle
+of the cam -- <img src="./Chapter 6. Cams_files/phi12.gif">.
+
+</dd><dd><i>IP</i>: A parameter whose absolute value is 1. It represents
+the location of the follower. When the follower is located above the
+<i>x</i> axis: <i>IP=+1</i>, otherwise: <i>IP=-1</i>.
+
+</dd><dd><i>IW</i>: A parameter whose absolute value is 1. It represents the turning
+direction of the cam.  When the cam turns clockwise: <i>IW=+1</i>, otherwise:
+<i>IW=-1</i>.
+</dd></dl><p>
+
+</p><h4>Cam profile design principle</h4><p>
+
+The fundamental principle in designing the cam profiles is still <a href="https://www.cs.cmu.edu/~rapidproto/mechanisms/chpt5.html#HDR77">inversion</a>, similar to that that for
+designing other cam mechanisms, (<i>e.g.</i>, the <a href="https://www.cs.cmu.edu/~rapidproto/mechanisms/chpt6.html#HDR6.5.1">
+translating follower cam mechanism</a>).  Normally, the follower
+oscillates when the cam turns.  This means that the relative motion
+between them is a combination of a relative turning motion and a
+relative oscillating motion.  Without changing this feature of their
+relative motion, let the cam remain fixed and the follower performs
+both the relative turning motion and oscillating motion. By imagining
+in this way, we have actually inverted the mechanism.  </p><p>
+
+</p><center>
+<a name="camwhat2">
+<img src="./Chapter 6. Cams_files/camwhat2.gif"></a>
+<h4>Figure 6-15 Cam profile design for a rotating follower</h4>
+</center><p>
+
+In Figure 6-15, only part of the cam profile <i>BK</i> is shown.  We
+assume that the cam turns clockwise.  </p><p>
+ 
+At the beginning of motion, the <a href="https://www.cs.cmu.edu/~rapidproto/mechanisms/chpt6.html#HDR89">knife edge</a> of the
+follower contacts the point of intersection (<i>B</i>) of the base
+circle and the cam profile. The initial angle between the follower
+(<i>AB</i>) and the line of two pivots (<i>AO</i>) is <img src="./Chapter 6. Cams_files/psi12.gif">0.  It can be calculated from
+the triangle <i>OAB</i>.  </p><p>
+
+When the angular displacement of the cam is <img src="./Chapter 6. Cams_files/phi12.gif">, the oscillating displacement
+of the follower is <img src="./Chapter 6. Cams_files/psi12.gif"> which
+measures from its own initial position. At this moment, the angle
+between the follower and the line passes through two pivots should be
+<img src="./Chapter 6. Cams_files/psi12.gif">+<img src="./Chapter 6. Cams_files/psi12.gif">0.  </p><p>
+
+The coordinates of the <a href="https://www.cs.cmu.edu/~rapidproto/mechanisms/chpt6.html#HDR89">knife edge</a> at this moment
+will be</p><p>
+
+</p><center>
+<img src="./Chapter 6. Cams_files/eq6.6.coord.gif">
+<p align="Right">(6-6)</p><p>
+</p></center>
+
+To get the corresponding knife-edge of the follower in the inverted
+mechanism, simply turn the follower around the center of the cam in
+the reverse direction of the cam rotation through an angle of <img src="./Chapter 6. Cams_files/phi12.gif">.  The knife edge will be
+inverted to point <i>K</i> which corresponds to the point on the cam
+profile in the inverted mechanism.  Therefore, the coordinates of
+point <i>K</i> can be calculated with the following equation: <p>
+ 
+</p><center>
+<img src="./Chapter 6. Cams_files/eq6.6.coord2.gif">
+<p align="Right">(6-7)
+</p><p></p></center>
+
+Note: 
+<ul> 
+<li>When the initial position of the follower is above the
+<i>x</i> axis, <i>IP = +1</i>, otherwise: <i>IP = -1</i>.
+
+</li><li>When the  rotary direction of the cam is clockwise: <i>IW = +1</i>,
+otherwise: <i>IW = -1</i>.
+</li></ul>
+
+<h4>6.5.3 <a name="diskcam">Disk Cam with Roller Follower</a> </h4><p>
+
+</p><h4>Additional parameters: </h4>
+
+<ul>
+<li><i>r</i>: the radius of the roller.
+
+</li><li><i>IM</i>: a parameter whose absolute value is 1, indicating which
+envelope curve will be adopted.
+
+</li><li><i>RM</i>: inner or outer envelope curve. When it is an inner envelope
+curve: <i>RM=+1</i>, otherwise: <i>RM=-1</i>.
+</li></ul><p>
+
+</p><h4>Design principle: </h4><p>
+
+The basic principle of designing a cam profile with the <a href="https://www.cs.cmu.edu/~rapidproto/mechanisms/chpt6.html#INVERSION">inversion</a> method is still used.  However, the
+curve is not directly generated by inversion.  This procedure has two
+steps: </p><p>
+
+</p><ol>
+
+<li>Imagine the center of the roller as a knife edge. This concept is
+important in cam profile design and is called the <a href="https://www.cs.cmu.edu/~rapidproto/mechanisms/chpt6.html#HDR97">trace point</a>) of follower.  Calculate the <a href="https://www.cs.cmu.edu/~rapidproto/mechanisms/chpt6.html#HDR97">pitch curve</a> <i>aa</i>, that is, the trace of the
+pitch point in the inverted mechanism.
+
+</li><li>The cam profile <i>bb</i> is a product of the enveloping motion of a
+series of rollers. 
+
+<center>
+<a name="twosteps">
+<img src="./Chapter 6. Cams_files/twosteps.gif">
+<h4>Figure 6-16 The trace point of the follower on a disk cam </h4>
+</a></center><a name="twosteps">
+</a></li></ol><p><a name="twosteps">
+
+</a></p><h4><a name="twosteps">Design equations: </a></h4><p><a name="twosteps">
+
+The problem of calculating the coordinates of the cam profile is the
+problem of calculating the tangent points of a sequence of rollers in
+the inverted mechanism.  At the moment shown Figure 6-17, the tangent
+point is <i>P</i> on the cam profile.  </a></p><p><a name="twosteps">
+
+</a></p><center><a name="twosteps">
+</a><a name="designeq">
+<img src="./Chapter 6. Cams_files/designeq.gif">
+<h4>Figure 6-17 The tangent point, P, of a roller to the disk cam</h4>
+</a></center><p><a name="designeq">
+
+The calculation of the coordinates of the point <i>P</i> has two steps:
+</a></p><ol><a name="designeq">
+</a><li><a name="designeq">Calculate the slope of the tangent <i>tt</i> of point <i>K</i> on
+</a><a href="https://www.cs.cmu.edu/~rapidproto/mechanisms/chpt6.html#HDR97">pitch curve</a>, <i>aa</i>.
+
+</li><li>Calculate the slope of the normal <i>nn</i> of the curve <i>aa</i> at
+point <i>K</i>.
+</li></ol><p>
+
+Since we have already have the coordinates of point <i>K: </i>(<i>x,
+y</i>), we can express the coordinates of point <i>P</i> as </p><p>
+
+</p><center>
+<img src="./Chapter 6. Cams_files/eq6.7.coord3.gif" align="Center"><br>
+<p align="right">(6-8)
+</p><p></p></center>
+
+Note:
+<ul><li>When the  rotary direction of the cam is clockwise: <i>IW = +1</i>,
+otherwise: <i>IW = -1</i>.
+</li><li>when the envelope curve (cam profile) lies inside the pitch curve: <i>RM
+= +1</i>, otherwise: <i>RM = -1</i>.
+</li></ul><p>
+
+<img align="center" src="./Chapter 6. Cams_files/darkbluebar.gif" width="650" height="5">
+
+</p><h4><a name="toc">Table of Contents </a></h4>
+
+<dl>
+<dd>&nbsp; &nbsp;<a href="https://www.cs.cmu.edu/~rapidproto/mechanisms/tablecontents.html">Complete Table of Contents</a>
+</dd><dd>1 <a href="https://www.cs.cmu.edu/~rapidproto/mechanisms/chpt1.html">Physical Principles</a>
+</dd><dd>2 <a href="https://www.cs.cmu.edu/~rapidproto/mechanisms/chpt2.html">Mechanisms and Simple Machines</a>
+</dd><dd>3 <a href="https://www.cs.cmu.edu/~rapidproto/mechanisms/chpt3.html">More on Machines and Mechanisms</a>
+</dd><dd>4 <a href="https://www.cs.cmu.edu/~rapidproto/mechanisms/chpt4.html">Basic Kinematics of Constrained Rigid Bodies</a>
+</dd><dd>5 <a href="https://www.cs.cmu.edu/~rapidproto/mechanisms/chpt5.html">Planar Linkages</a>
+</dd><dd>6 <a href="https://www.cs.cmu.edu/~rapidproto/mechanisms/chpt6.html#top">Cams</a>
+    <dl>
+    <dd>6.1  <a href="https://www.cs.cmu.edu/~rapidproto/mechanisms/chpt6.html#HDR82">Introduction</a>
+       <dl>
+        <dd>6.1.1 <a href="https://www.cs.cmu.edu/~rapidproto/mechanisms/chpt6.html#HDR83">A Simple Experiment: What is a Cam?</a>
+        </dd><dd>6.1.2 <a href="https://www.cs.cmu.edu/~rapidproto/mechanisms/chpt6.html#HDR85">Cam Mechanisms</a>
+       </dd></dl>
+    </dd><dd>6.2 <a href="https://www.cs.cmu.edu/~rapidproto/mechanisms/chpt6.html#HDR86">Classification of Cam Mechanisms</a>
+       <dl>
+        <dd>6.2.1 <a href="https://www.cs.cmu.edu/~rapidproto/mechanisms/chpt6.html#HDR89">Follower Configuration
+        </a></dd><dd><a href="https://www.cs.cmu.edu/~rapidproto/mechanisms/chpt6.html#HDR89">6.2.2  </a><a href="https://www.cs.cmu.edu/~rapidproto/mechanisms/chpt6.html#HDR90">Follower Arrangement
+        </a></dd><dd><a href="https://www.cs.cmu.edu/~rapidproto/mechanisms/chpt6.html#HDR90">6.2.3 </a><a href="https://www.cs.cmu.edu/~rapidproto/mechanisms/chpt6.html#HDR92">Cam Shape
+        </a></dd><dd><a href="https://www.cs.cmu.edu/~rapidproto/mechanisms/chpt6.html#HDR92">6.2.4 </a><a href="https://www.cs.cmu.edu/~rapidproto/mechanisms/chpt6.html#HDR95">Constraints on the Follower</a>
+        </dd><dd>6.2.5 <a href="https://www.cs.cmu.edu/~rapidproto/mechanisms/chpt6.html#HDR95">Examples in SimDesign</a>
+       </dd></dl>
+    </dd><dd>6.3 <a href="https://www.cs.cmu.edu/~rapidproto/mechanisms/chpt6.html#HDR96">Cam Nomenclature</a>
+    </dd><dd>6.4 <a href="https://www.cs.cmu.edu/~rapidproto/mechanisms/chpt6.html#HDR98">Motion events</a>
+       <dl>
+        <dd>6.4.1 <a href="https://www.cs.cmu.edu/~rapidproto/mechanisms/chpt6.html#HDR100">Constant Velocity Motion</a>
+        </dd><dd>6.4.2 <a href="https://www.cs.cmu.edu/~rapidproto/mechanisms/chpt6.html#HDR101">Constant Acceleration Motion</a>
+        </dd><dd>6.4.3 <a href="https://www.cs.cmu.edu/~rapidproto/mechanisms/chpt6.html#HDR102">Harmonic Motion</a>
+       </dd></dl>
+    </dd><dd>6.5 <a href="https://www.cs.cmu.edu/~rapidproto/mechanisms/chpt6.html#camdesign">Cam Design
+       </a><dl><a href="https://www.cs.cmu.edu/~rapidproto/mechanisms/chpt6.html#camdesign">
+        </a><dd><a href="https://www.cs.cmu.edu/~rapidproto/mechanisms/chpt6.html#camdesign">6.5.1 </a><a href="https://www.cs.cmu.edu/~rapidproto/mechanisms/chpt6.html#HDR6.5.1">Disk Cam with Knife-Edge 
+			Translating Follower</a>
+        </dd><dd>6.5.2 <a href="https://www.cs.cmu.edu/~rapidproto/mechanisms/chpt6.html#HDR6.5.2">Disk Cam with Knife-Edge Oscillating
+			Follower</a>
+        </dd><dd>6.5.3 <a href="https://www.cs.cmu.edu/~rapidproto/mechanisms/chpt6.html#diskcam">Disk Cam with Roller Follower</a>
+       </dd></dl>
+    </dd></dl>
+</dd><dd>7 <a href="https://www.cs.cmu.edu/~rapidproto/mechanisms/chpt7.html">Gears</a>
+</dd><dd>8 <a href="https://www.cs.cmu.edu/~rapidproto/mechanisms/chpt8.html">Other Mechanisms</a>
+</dd><dd><a href="https://www.cs.cmu.edu/~rapidproto/mechanisms/index.html">Index</a>
+</dd><dd><a href="https://www.cs.cmu.edu/~rapidproto/mechanisms/references.html">References</a>
+</dd></dl><p>
+
+<a name="bottom"><img align="center" src="./Chapter 6. Cams_files/darkbluebar.gif" width="800" height="5"></a><br>
+</p><p align="Center"><a href="https://www.cs.cmu.edu/~rapidproto/mechanisms/index.html">
+<img src="./Chapter 6. Cams_files/home.gif" width="95" height="95"></a> &nbsp; &nbsp; &nbsp;
+<a href="https://www.cs.cmu.edu/~rapidproto/mechanisms/chpt6.html#top">
+<img src="./Chapter 6. Cams_files/uparrow.gif" width="95" height="95"></a>
+&nbsp; &nbsp; &nbsp;
+<a href="mailto:sfinger@ri.cmu.edu"><img src="./Chapter 6. Cams_files/bug.gif" width="95" height="95"></a>&nbsp;
+</p><p>
+<i><a href="http://www.cs.cmu.edu/~sfinger/home.html">sfinger@ri.cmu.edu</a></i>
+</p>
+</td></tr>
+</tbody></table>
+</td></tr></tbody></table>
+
+</body></html>
